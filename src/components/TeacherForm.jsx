@@ -45,21 +45,21 @@ const TeacherForm = () => {
       <div className="flex items-center space-x-4 mb-6">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 rounded-full bg-orange-500 text-white text-md flex items-center justify-center">1</div>
-          <span className="text-primary font-medium">Личные данные</span>
+          <span className="text-primary font-medium text-sm md:text-base">Личные данные</span>
         </div>
         <div className="h-px w-12 bg-gray-300" />
         <div className="flex items-center space-x-2 text-gray-300">
           <div className="w-8 h-8 rounded-full border border-gray-300 text-md flex items-center justify-center">2</div>
-          <span className="font-medium">Обучение</span>
+          <span className="font-medium text-sm md:text-base">Обучение</span>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Input label="Фамилия" placeholder="Введите вашу фамилию" required value={form.lastName} onChange={handleChange("lastName")} />
         <Input label="Имя" required placeholder="Введите ваше имя" value={form.firstName} onChange={handleChange("firstName")} />
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Input type="email" label="Почта" placeholder="Введите вашу почту" required value={form.email} onChange={handleChange("email")} />
         <DateInput
             label="Дата рождения"
@@ -69,7 +69,7 @@ const TeacherForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <PhoneInput
             label="Телефон"
             value={form.phone}
@@ -90,7 +90,7 @@ const TeacherForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <CustomSelect
           label="Университет"
           value={form.university}
@@ -118,12 +118,12 @@ const TeacherForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Input label="Стаж" placeholder="Стаж" required value={form.experience} onChange={handleChange("experience")} />
         <Input label="Цена за урок" placeholder="Введите цену за урок" required value={form.price} onChange={handleChange("price")} />
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <CustomSelect
           label="Формат обучения"
           value={form.studyFormat}
@@ -150,7 +150,7 @@ const TeacherForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <CustomSelect
           label="Предметы"
           value={form.subjects}
@@ -178,7 +178,7 @@ const TeacherForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Input
           label="Пароль"
           isPassword={true}

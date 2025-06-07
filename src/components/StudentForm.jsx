@@ -31,12 +31,12 @@ const StudentForm = () => {
 
   return (
     <div className="space-y-3">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Input label="Фамилия" required placeholder="Введите вашу фамилию" value={form.lastName} onChange={handleChange("lastName")} />
         <Input label="Имя" required placeholder="Введите ваше имя" value={form.firstName} onChange={handleChange("firstName")} />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Input type="email" label="Почта" placeholder="Введите вашу почту" required value={form.email} onChange={handleChange("email")} />
         <DateInput
             label="Дата рождения"
@@ -46,7 +46,7 @@ const StudentForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <CustomSelect
           label="Класс"
           value={form.grade}
@@ -73,7 +73,7 @@ const StudentForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <CustomSelect
           label="Предметы"
           value={form.subjects}
@@ -92,7 +92,7 @@ const StudentForm = () => {
           value={form.studyFormat}
           onValueChange={(val) => setForm((f) => ({ ...f, studyFormat: val }))}
           required
-          placeholder="Выберите формат обучения"
+          placeholder="Выберите формат"
           options={[
             { value: "online", label: "Онлайн" },
             { value: "offline", label: "Офлайн" },
@@ -101,7 +101,7 @@ const StudentForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <CustomSelect
           label="Город"
           value={form.city}
@@ -129,7 +129,7 @@ const StudentForm = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
         <Input
           label="Пароль"
           isPassword={true}

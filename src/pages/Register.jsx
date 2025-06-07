@@ -8,7 +8,7 @@ const Register = () => {
 
   return (
     <div className="flex min-h-screen">
-      <div className="w-full lg:w-3/5 p-8 md:p-12 bg-white flex items-center">
+      <div className="w-full lg:w-3/5 p-4 md:p-8 bg-white flex items-center">
         <div className="max-w-2xl mx-auto w-full text-primary">
           <h1 className="text-2xl font-semibold mb-8">Регистрация</h1>
 

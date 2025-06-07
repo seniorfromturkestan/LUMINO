@@ -24,8 +24,8 @@ const Lists = () => {
   };
 
   return (
-    <div className="p-10 max-w-8xl mx-auto">
-      <h2 className="text-2xl font-semibold text-primary mb-6">Подходящие преподавателя</h2>
+    <div className="px-4 py-6 sm:px-0 sm:py-0 max-w-7xl mx-auto">
+      <h2 className="text-2xl font-semibold text-primary my-10">Подходящие преподавателя</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse border-gray-200 space-y-10">
           <thead>

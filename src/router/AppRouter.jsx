@@ -3,6 +3,7 @@ import Login from '../pages/Login';
 import Register from '../pages/Register';
 import TestInterface from '../pages/TestPage';
 import Lists from '../pages/Lists';
+import Profile from '../pages/Profile';
 
 const AppRouter = () => {
     return (
@@ -11,6 +12,7 @@ const AppRouter = () => {
             <Route path="/registration" element={<Register />} />
             <Route path="/testing" element={<TestInterface />}/>
             <Route path="/lists" element={<Lists />}/>
+            <Route path="/profile" element={<Profile />} />
 
 
 

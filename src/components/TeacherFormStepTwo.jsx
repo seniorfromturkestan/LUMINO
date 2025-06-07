@@ -41,15 +41,15 @@ const TeacherFormStepTwo = ({ onBack, onSubmit }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
             </div>
-            <span className="text-primary font-medium">Личные данные</span>
+            <span className="text-primary font-medium text-sm md:text-base">Личные данные</span>
             </div>
             <div className="h-px w-12 bg-orange-500" />
             <div className="flex items-center space-x-2">
             <div className="w-8 h-8 rounded-full bg-orange-500 text-white  text-md flex items-center justify-center">2</div>
-            <span className="font-medium">Обучение</span>
+            <span className="font-medium text-sm md:text-base">Обучение</span>
             </div>
         </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input
           label="Опишите последние три работы"
           placeholder="Опишите"
@@ -67,7 +67,7 @@ const TeacherFormStepTwo = ({ onBack, onSubmit }) => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input
           label="Цель преподавания"
           subLabel="до 50 слов"
@@ -85,7 +85,7 @@ const TeacherFormStepTwo = ({ onBack, onSubmit }) => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <CustomSelect
         label="Часовой пояс"
         value={form.timezone}
@@ -109,7 +109,7 @@ const TeacherFormStepTwo = ({ onBack, onSubmit }) => {
 
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Input
           label="Описание дипломов"
           placeholder="Введите описание"
